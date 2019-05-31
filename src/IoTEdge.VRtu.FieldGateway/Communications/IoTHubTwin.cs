@@ -15,10 +15,7 @@ namespace IoTEdge.VRtu.FieldGateway.Communications
         }
         public async Task<EdgeGatewayConfiguration> GetModuleConfigAsync()
         {
-            //ModuleClient client = await ModuleClient.CreateFromEnvironmentAsync();
-
-            //ModuleClient client = ModuleClient.CreateFromConnectionString("HostName=vrtuhub.azure-devices.net;DeviceId=myFirstDevice;ModuleId=myFirstModule;SharedAccessKey=OIklO5yo1PjJcjOvRuWsdQqDF96wp0YhBJLu3gnp18E=");
-            ModuleClient client = ModuleClient.CreateFromConnectionString("HostName=vrtuhub.azure-devices.net;DeviceId=device1;SharedAccessKey=ayTcxR0zgMksoOVGIxrc0C4z/sTsRPXtg87FVuOEH60=;ModuleId=tempSensor");
+            ModuleClient client = await ModuleClient.CreateFromEnvironmentAsync();
             await client.OpenAsync();
             Twin twin = await client.GetTwinAsync();
             TwinCollection collection = twin.Properties.Desired;
