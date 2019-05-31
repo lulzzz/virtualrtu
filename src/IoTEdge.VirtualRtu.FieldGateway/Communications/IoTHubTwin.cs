@@ -15,6 +15,7 @@ namespace IoTEdge.VirtualRtu.FieldGateway.Communications
         }
         public async Task<EdgeGatewayConfiguration> GetModuleConfigAsync()
         {
+
             ModuleClient client = await ModuleClient.CreateFromEnvironmentAsync();                        
             await client.OpenAsync();
             Twin twin = await client.GetTwinAsync();
