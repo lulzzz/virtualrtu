@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoTEdge.VRtu.FieldGateway", "..\IoTEdge.VRtu.FieldGateway\IoTEdge.VRtu.FieldGateway.csproj", "{1DC35C70-253A-43FB-994E-0D226D650E96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoTEdge.VRtu.Configuration", "IoTEdge.VRtu.Configuration\IoTEdge.VRtu.Configuration.csproj", "{5D4F5459-F162-4396-8E5D-DB3888BCA50C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Storage", "..\..\SkunkLab.Core\src\SkunkLab.Storage\SkunkLab.Storage.csproj", "{DDFB346E-92F7-43BE-BC20-60C45EBBC04B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Security", "..\..\SkunkLab.Core\src\SkunkLab.Security\SkunkLab.Security.csproj", "{423B4BF9-39BC-42C3-963A-60E316FDE2B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Protocols", "..\..\SkunkLab.Core\src\SkunkLab.Protocols\SkunkLab.Protocols.csproj", "{AC4AEA7E-11CF-4211-AD61-1C4B873F2103}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Channels", "..\..\SkunkLab.Core\src\SkunkLab.Channels\SkunkLab.Channels.csproj", "{099901BF-6AE2-4875-9F10-BCC694CEDE8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Clients", "..\..\SkunkLab.Core\src\SkunkLab.Clients\SkunkLab.Clients.csproj", "{17AC042D-9A50-4C44-B6D8-BE3F452DB5E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DC35C70-253A-43FB-994E-0D226D650E96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC35C70-253A-43FB-994E-0D226D650E96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC35C70-253A-43FB-994E-0D226D650E96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC35C70-253A-43FB-994E-0D226D650E96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4F5459-F162-4396-8E5D-DB3888BCA50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4F5459-F162-4396-8E5D-DB3888BCA50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4F5459-F162-4396-8E5D-DB3888BCA50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4F5459-F162-4396-8E5D-DB3888BCA50C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDFB346E-92F7-43BE-BC20-60C45EBBC04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDFB346E-92F7-43BE-BC20-60C45EBBC04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDFB346E-92F7-43BE-BC20-60C45EBBC04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDFB346E-92F7-43BE-BC20-60C45EBBC04B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{423B4BF9-39BC-42C3-963A-60E316FDE2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{423B4BF9-39BC-42C3-963A-60E316FDE2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{423B4BF9-39BC-42C3-963A-60E316FDE2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{423B4BF9-39BC-42C3-963A-60E316FDE2B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4AEA7E-11CF-4211-AD61-1C4B873F2103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4AEA7E-11CF-4211-AD61-1C4B873F2103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4AEA7E-11CF-4211-AD61-1C4B873F2103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4AEA7E-11CF-4211-AD61-1C4B873F2103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099901BF-6AE2-4875-9F10-BCC694CEDE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099901BF-6AE2-4875-9F10-BCC694CEDE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099901BF-6AE2-4875-9F10-BCC694CEDE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099901BF-6AE2-4875-9F10-BCC694CEDE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17AC042D-9A50-4C44-B6D8-BE3F452DB5E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17AC042D-9A50-4C44-B6D8-BE3F452DB5E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17AC042D-9A50-4C44-B6D8-BE3F452DB5E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17AC042D-9A50-4C44-B6D8-BE3F452DB5E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {823F38E1-4869-48B0-A690-62FC9F6375AB}
+	EndGlobalSection
+EndGlobal

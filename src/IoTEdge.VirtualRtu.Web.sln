@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoTEdge.VirtualRtu.Configuration", "IoTEdge.VirtualRtu.Configuration\IoTEdge.VirtualRtu.Configuration.csproj", "{7B87CD84-8C0C-406D-9C37-150224591617}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoTEdge.VirtualRtu", "IoTEdge.VirtualRtu\IoTEdge.VirtualRtu.csproj", "{FD9DDC9C-2E1C-4010-B344-0162D74CB7F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoTEdge.VRtu.FieldGateway", "IoTEdge.VRtu.FieldGateway\IoTEdge.VRtu.FieldGateway.csproj", "{29A327F0-0F9F-43FC-909A-DE2EF5B00029}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoTEdge.FieldGateway.Function", "IoTEdge.FieldGateway.Function\IoTEdge.FieldGateway.Function.csproj", "{08C827C9-F973-4C81-A081-49C62B69A473}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTEdge.VirtualRtu.WebApp", "IoTEdge.VirtualRtu.WebApp\IoTEdge.VirtualRtu.WebApp.csproj", "{B73164CD-3991-4B28-ACC3-855AB8C572C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Security", "..\..\SkunkLab.Core\src\SkunkLab.Security\SkunkLab.Security.csproj", "{1FAB053A-58AD-4E68-953A-4889EDDE9C76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Storage", "..\..\SkunkLab.Core\src\SkunkLab.Storage\SkunkLab.Storage.csproj", "{E4DB40F8-1BF7-492F-9B62-9B891AA56BA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Protocols", "..\..\SkunkLab.Core\src\SkunkLab.Protocols\SkunkLab.Protocols.csproj", "{B37308BE-E1CD-43A1-9A4B-C8C64660AA68}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Channels", "..\..\SkunkLab.Core\src\SkunkLab.Channels\SkunkLab.Channels.csproj", "{F2B38FE4-1913-4BDB-839E-CC54B701BB72}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkunkLab.Clients", "..\..\SkunkLab.Core\src\SkunkLab.Clients\SkunkLab.Clients.csproj", "{D1966A83-6362-4E8A-A1A4-A8B3C0B8EF44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTEdge.VirtualRtu.FieldGateway", "IoTEdge.VirtualRtu.FieldGateway\IoTEdge.VirtualRtu.FieldGateway.csproj", "{8B38E4F7-AC63-411B-B635-D304A6ED775D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B87CD84-8C0C-406D-9C37-150224591617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B87CD84-8C0C-406D-9C37-150224591617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B87CD84-8C0C-406D-9C37-150224591617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B87CD84-8C0C-406D-9C37-150224591617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9DDC9C-2E1C-4010-B344-0162D74CB7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9DDC9C-2E1C-4010-B344-0162D74CB7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9DDC9C-2E1C-4010-B344-0162D74CB7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9DDC9C-2E1C-4010-B344-0162D74CB7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A327F0-0F9F-43FC-909A-DE2EF5B00029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A327F0-0F9F-43FC-909A-DE2EF5B00029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A327F0-0F9F-43FC-909A-DE2EF5B00029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A327F0-0F9F-43FC-909A-DE2EF5B00029}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C827C9-F973-4C81-A081-49C62B69A473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C827C9-F973-4C81-A081-49C62B69A473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C827C9-F973-4C81-A081-49C62B69A473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C827C9-F973-4C81-A081-49C62B69A473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B73164CD-3991-4B28-ACC3-855AB8C572C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B73164CD-3991-4B28-ACC3-855AB8C572C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B73164CD-3991-4B28-ACC3-855AB8C572C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B73164CD-3991-4B28-ACC3-855AB8C572C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FAB053A-58AD-4E68-953A-4889EDDE9C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FAB053A-58AD-4E68-953A-4889EDDE9C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FAB053A-58AD-4E68-953A-4889EDDE9C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FAB053A-58AD-4E68-953A-4889EDDE9C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4DB40F8-1BF7-492F-9B62-9B891AA56BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4DB40F8-1BF7-492F-9B62-9B891AA56BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4DB40F8-1BF7-492F-9B62-9B891AA56BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4DB40F8-1BF7-492F-9B62-9B891AA56BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B37308BE-E1CD-43A1-9A4B-C8C64660AA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B37308BE-E1CD-43A1-9A4B-C8C64660AA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B37308BE-E1CD-43A1-9A4B-C8C64660AA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B37308BE-E1CD-43A1-9A4B-C8C64660AA68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B38FE4-1913-4BDB-839E-CC54B701BB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B38FE4-1913-4BDB-839E-CC54B701BB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B38FE4-1913-4BDB-839E-CC54B701BB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B38FE4-1913-4BDB-839E-CC54B701BB72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1966A83-6362-4E8A-A1A4-A8B3C0B8EF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1966A83-6362-4E8A-A1A4-A8B3C0B8EF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1966A83-6362-4E8A-A1A4-A8B3C0B8EF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1966A83-6362-4E8A-A1A4-A8B3C0B8EF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B38E4F7-AC63-411B-B635-D304A6ED775D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B38E4F7-AC63-411B-B635-D304A6ED775D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B38E4F7-AC63-411B-B635-D304A6ED775D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B38E4F7-AC63-411B-B635-D304A6ED775D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97598CC3-66F1-40FE-8525-7CE45A56ECDE}
+	EndGlobalSection
+EndGlobal

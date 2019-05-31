@@ -1,0 +1,93 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{ template "fullname" . }}-vrtu
+  labels:
+    app: {{ template "fullname" . }}-vrtu
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+    release: "{{ .Release.Name }}"
+    heritage: "{{ .Release.Service }}"
+    component: vrtu
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: vrtu
+      component: vrtu
+  template:
+    metadata:
+      labels:
+        app: vrtu
+        chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
+        release: "{{ .Release.Name }}"
+        heritage: "{{ .Release.Service }}"
+        component: vrtu
+    spec:      
+      containers:
+        - name: vrtu     
+          image: {{ .Values.image1.repository }}:{{ .Values.image1.tag }}
+          imagePullPolicy: {{ .Values.image1.pullPolicy }}
+          env:          
+          - name: VRTU_ClaimTypes            
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "fullname" . }}
+                key: claimTypes  
+          - name: VRTU_ClaimValues            
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "fullname" . }}
+                key: claimValues 
+          - name: VRTU_SymmetricKey          
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "fullname" . }}
+                key: symmetricKey  
+          - name: VRTU_Issuer        
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "fullname" . }}
+                key: issuer   
+          - name: VRTU_Audience        
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "fullname" . }}
+                key: audience 
+          - name: VRTU_LifetimeMinutes       
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "fullname" . }}
+                key: lifetimeMinutes 
+          - name: VRTU_PoolSize       
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "fullname" . }}
+                key: poolSize
+          - name: VRTU_PiraeusHostname    
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "fullname" . }}
+                key: piraeusHostname
+          - name: VRTU_RtuMapSasUri
+            valueFrom:
+              secretKeyRef:
+                name: {{ template "fullname" . }}
+                key: rtuMapSasUri               
+          ports:
+          - containerPort: 502
+          readinessProbe:
+            tcpSocket:
+              port: 502
+            failureThreshold: 1
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 2
+          livenessProbe:
+            tcpSocket:
+              port: 502
+            failureThreshold: 3
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 2              

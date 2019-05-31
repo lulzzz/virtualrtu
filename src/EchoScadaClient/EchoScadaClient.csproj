@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SkunkLab.Core\src\SkunkLab.Channels\SkunkLab.Channels.csproj" />
+    <ProjectReference Include="..\..\..\SkunkLab.Core\src\SkunkLab.Clients\SkunkLab.Clients.csproj" />
+    <ProjectReference Include="..\..\..\SkunkLab.Core\src\SkunkLab.Protocols\SkunkLab.Protocols.csproj" />
+    <ProjectReference Include="..\..\..\SkunkLab.Core\src\SkunkLab.Security\SkunkLab.Security.csproj" />
+    <ProjectReference Include="..\..\..\SkunkLab.Core\src\SkunkLab.Storage\SkunkLab.Storage.csproj" />
+    <ProjectReference Include="..\IoTEdge.VirtualRtu.Configuration\IoTEdge.VirtualRtu.Configuration.csproj" />
+  </ItemGroup>
+
+</Project>
